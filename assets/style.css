@@ -1,0 +1,238 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+/* Scroll */
+
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 7px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--aljfootcolor);
+    border-radius: 10px;
+}
+
+
+/* Variables para los colores */
+
+:root {
+    --aljgradients: #426A8C;
+    --aljbgcolor: #A3B2BF;
+    --aljtextcolor: #162526;
+    --aljsubfootcolor: #617C8C;
+    --aljfootcolor: #395059;
+    --aljtextwhite: #D9D3D2;
+}
+
+
+/* Fin de las variables */
+
+
+/* Retoques del body */
+
+body {
+    background-color: var(--aljbgcolor);
+    height: 100%;
+}
+
+
+/* Fin de retoques  */
+
+
+/* Menú de navegación */
+
+@media only screen and (min-width: 1023px) {
+    .logo {
+        margin-left: 4.8rem;
+    }
+}
+
+.menu {
+    height: 100px;
+    width: 100vw;
+    display: inline-block;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--aljtextcolor);
+    float: left;
+    margin-top: 0.4rem;
+    margin-left: 2.5rem;
+}
+
+.logo:hover {
+    font-size: 4.1rem;
+}
+
+.headertext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--aljtextcolor);
+    margin-top: 1.3rem;
+}
+
+.headertext:hover {
+    color: var(--aljtextwhite);
+    font-size: 2.3rem;
+}
+
+.fa-arrow-left {
+    color: var(--aljtextcolor);
+    font-size: 2rem;
+    margin-top: 1.3rem;
+}
+
+.fa-arrow-left:hover {
+    color: var(--aljtextwhite);
+    font-size: 2.1rem;
+}
+
+
+/* Fin de menú de navegación */
+
+
+/* Haciendo Imagenes y textos responsives */
+
+@media only screen and (min-width: 1023px) {
+    img {
+        width: 56vh;
+    }
+    .titulos {
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+    .fa-arrow-left {
+        padding-right: 4.7rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    img,
+    .titulos,
+    .parrafos {
+        width: 40vh;
+        display: block;
+        margin: auto;
+    }
+    img {
+        padding-top: 3rem;
+    }
+    .titulos {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .logo {
+        margin-left: 0.4rem;
+    }
+    .fa-arrow-left {
+        padding-right: 1.2rem;
+    }
+}
+
+
+/* Fin de imagenes responsives */
+
+
+/* Tres columnas grid */
+
+@media only screen and (min-width: 1025px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .columnauno {
+        width: 35rem;
+        margin-left: 2.4rem;
+    }
+}
+
+
+/* .contenedor-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+} */
+
+.titulos {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--aljtextcolor);
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.parrafos {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+/* Comienzo del subfooter */
+
+.subfooter {
+    background-color: var(--aljsubfootcolor);
+    height: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.textocopy {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--aljtextwhite);
+    text-align: center;
+    font-weight: 600;
+    padding-top: 0.8rem;
+}
+
+
+/* Fin del subfooter */
+
+
+/* Comienzo del footer  */
+
+@media only screen and (min-width: 1023px) {
+    .principalfooter {
+        background-color: var(--aljfootcolor);
+        height: 8.7rem;
+    }
+    .textofooter {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: var(--aljtextwhite);
+        padding-top: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .principalfooter {
+        background-color: var(--aljfootcolor);
+        height: 8.7rem;
+    }
+    .textofooter {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: var(--aljtextwhite);
+        padding-top: 1.5rem;
+        font-weight: 600;
+    }
+}
